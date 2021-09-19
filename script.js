@@ -30,13 +30,13 @@ setInterval(function colorClock() {
     let hex = hex_time.replace(/_/g, '') + '00'
     let comp_hex = complementary_color(hex)
 
-    document.getElementById('clock').textContent = hr + ' ' + min + ' ' + sec
+    document.getElementById('clock').textContent = hr + ':' + min + ':' + sec
     document.getElementById('hexTime').textContent = hex_time
     document.getElementById('hexColor').textContent = 'Hex Color: #' + hex
     document.getElementById('compColor').textContent = 'Complementary Color: ' + comp_hex
 
     document.body.style.background = '#' + hex
-    document.getElementById('f1').style.color = comp_hex
+    document.getElementById('flex1').style.color = comp_hex
     
 },1000)
 
