@@ -12,6 +12,11 @@ html, body {
     padding: 0;
 }
 
+h1 {
+    margin: 10px;
+    font-size: 0.7em;
+}
+
 section {
     margin: auto;
     height: 100%;
@@ -22,10 +27,18 @@ p {
 }
 
 span {
-    font-size: 0.3em;
+    font-size: 0.25em;
+}
+
+.title {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .flex {
+    clear: both;
     margin: auto;
     display: flex;
     align-items: center;
@@ -37,14 +50,14 @@ span {
     margin: auto;
 }
 
-#clock {
+#hexTime {
     font-size: 2em;
 }
 
-#hex, #comp {
-    text-align: end;
-    position: relative;
-    margin: 10px;
+#hex {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 #hexColor, #compColor {
